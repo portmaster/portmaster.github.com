@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Portmaster : FreeBSD port management script without external databases or languages" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Portmaster</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/portmaster/portmaster">View on GitHub</a>
+
+          <h1 id="project_title">Portmaster</h1>
+          <h2 id="project_tagline">FreeBSD port management script without external databases or languages</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/portmaster/portmaster/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/portmaster/portmaster/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>This script uses the existing ports infrastructure to track dependencies,
+and keep them up to date.  It is written in /bin/sh so it has no dependencies.</p>
+
+<p>Portmaster has the following features:</p>
+
+<ul>
+<li>Updates and repairs (as needed) entries for dependencies in both +CONTENTS
+and +REQUIRED_BY files for both the port that is being updated, and any
+ports that depend on it</li>
+<li>Runs make config recursively through all ports before starting build</li>
+<li>Downloads distfiles in the background</li>
+<li>Recursively checks and upgrades (or installs) all dependencies</li>
+<li>User can force upgrades of all dependent ports</li>
+<li>Offers the user the opportunity to delete stale distfiles</li>
+<li>Supports ports/MOVED and non-default settings of PORTSDIR and PKG_DBDIR</li>
+<li>Interactive update mode (prompts for each update)</li>
+<li>Option to rebuild port, and ports that depend on it</li>
+<li>Options to make packages out of installed, and new ports</li>
+<li>Option to clean out stale port dependencies</li>
+<li>Options to list installed ports by category, and those with new versions</li>
+<li>Packages can be used for installation either exclusively, if available,
+or only for build dependencies</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Portmaster maintained by <a href="https://github.com/portmaster">portmaster</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
